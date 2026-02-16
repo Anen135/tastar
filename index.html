@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOREM - Official Page</title>
+    <title>Тастар - Official Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <!-- Подключаем Lucide для векторных иконок -->
@@ -40,9 +40,9 @@
     <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <div class="text-2xl font-bold heading-font tracking-tighter text-green-600">LOREM</div>
+                <div class="text-2xl font-bold heading-font tracking-tighter text-green-600">Тастар</div>
                 <div class="hidden md:flex space-x-8 text-sm font-medium">
-                    <a href="#press" class="hover:text-green-600 transition">LOREM IPSUM</a>
+                    <a href="#press" class="hover:text-green-600 transition">Тастар IPSUM</a>
                     <a href="#booklets" class="hover:text-green-600 transition">CODICES</a>
                     <a href="#rules" class="hover:text-green-600 transition">REGULAE</a>
                     <a href="#design" class="hover:text-green-600 transition">STYLUS</a>
@@ -53,23 +53,45 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="pt-32 pb-16 px-4 text-center">
-        <h1 class="text-5xl md:text-7xl font-extrabold heading-font mb-6 bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-orange-500">
-            LOREM
-        </h1>
-        <p class="text-xl text-slate-600 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <header class="pt-32 pb-16 px-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+            <!-- Левая картинка -->
+            <div class="hidden lg:block w-1/4">
+                <img src="Public/sponc/001.png"
+                    class="w-full max-w-xs mx-auto opacity-90 hover:scale-105 transition duration-500">
+            </div>
+
+            <!-- Центр -->
+            <div class="text-center w-full lg:w-1/2">
+                <h1 class="text-5xl md:text-7xl font-extrabold heading-font mb-6 bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-orange-500">
+                    Тастар
+                </h1>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+                    Тастар ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+
+            <!-- Правая картинка -->
+            <div class="hidden lg:block w-1/4">
+                <img src="Public/sponc/002.png"
+                    class="w-full max-w-xs mx-auto opacity-90 hover:scale-105 transition duration-500">
+            </div>
+
+        </div>
     </header>
+
 
     <!-- 1. Пресс-релиз -->
     <section id="press" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-10 text-center heading-font">LOREM IPSUM</h2>
+            <h2 class="text-3xl font-bold mb-10 text-center heading-font">Пресс-релиз</h2>
             <div class="prose prose-slate lg:prose-lg mx-auto text-slate-600 leading-relaxed">
                 <p class="mb-4">
-                    Project <strong>"LOREM"</strong> represents a unique platform combining national code aesthetics and modern industrial design functionality. Our mission is to breathe new life into familiar forms, creating products that tell a story.
+                    Астана қаласы әкімдігінің №61 «Шолпан» балабақшасы МКҚК мен «Астана дарыны»дарынды балалар мен талантты жастарды анықтау және қолдау орталығымен бірлесе 2026 жылғы сағат 9:00 17 ақпанда ерекше білімді қажет ететін балаларға арналған «Сәулелі тастар» қалалық ұлттық ойыны тақырыбында жарыс өтеді.
                 </p>
                 <p>
-                    In this season we present an updated line focused on sustainability and ergonomics. Every element has been carefully selected to meet high quality standards and visual harmony.
+                   Өтетін орны: Астана қаласы, №61 «Шолпан» балабақшасы, Бәсіре көшесі 2.
                 </p>
             </div>
         </div>
@@ -79,43 +101,67 @@
     <section id="booklets" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold mb-12 text-center heading-font">CODICES</h2>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Booklet Item -->
-                <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 card-hover text-center">
-                    <div class="aspect-[3/4] bg-slate-100 rounded-lg mb-4 flex items-center justify-center text-green-400">
-                        <i data-lucide="book-open" class="w-16 h-16 opacity-20"></i>
+
+                <!-- Карточка 1 -->
+                <div class="rule-gallery cursor-pointer"
+                    data-images='["Public/buklet/001.png","Public/buklet/002.png"]'>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 card-hover text-center">
+                        <div class="aspect-[3/4] bg-slate-100 rounded-lg mb-4 overflow-hidden">
+                            <img src="Public/buklet/001.png"
+                                class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">BOOKLET</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Click to open gallery
+                        </p>
+                        <div class="w-full py-2 bg-green-50 text-green-600 rounded-lg font-semibold flex items-center justify-center gap-2">
+                            <i data-lucide="images" class="w-4 h-4"></i> OPEN
+                        </div>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">COLLECTIO PRIMA 2024</h3>
-                    <p class="text-sm text-slate-500 mb-4">Full catalog of products with detailed characteristics.</p>
-                    <button class="w-full py-2 bg-green-50 text-green-600 rounded-lg font-semibold hover:bg-green-100 transition flex items-center justify-center gap-2">
-                        <i data-lucide="download" class="w-4 h-4"></i> DOWNLOAD PDF
-                    </button>
                 </div>
-                <!-- Booklet Item -->
-                <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 card-hover text-center">
-                    <div class="aspect-[3/4] bg-slate-100 rounded-lg mb-4 flex items-center justify-center text-green-400">
-                        <i data-lucide="settings" class="w-16 h-16 opacity-20"></i>
+
+                <!-- Карточка 2 -->
+                <div class="rule-gallery cursor-pointer"
+                    data-images='["Public/doc/01.png","Public/doc/02.png","Public/doc/03.png","Public/doc/04.png"]'>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 card-hover text-center">
+                        <div class="aspect-[3/4] bg-slate-100 rounded-lg mb-4 overflow-hidden">
+                            <img src="Public/doc/01.png"
+                                class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">DOCUMENTS</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Click to open gallery
+                        </p>
+                        <div class="w-full py-2 bg-green-50 text-green-600 rounded-lg font-semibold flex items-center justify-center gap-2">
+                            <i data-lucide="images" class="w-4 h-4"></i> OPEN
+                        </div>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">TECHNICAL GUIDE</h3>
-                    <p class="text-sm text-slate-500 mb-4">Instructions for operation and material care.</p>
-                    <button class="w-full py-2 bg-green-50 text-green-600 rounded-lg font-semibold hover:bg-green-100 transition flex items-center justify-center gap-2">
-                        <i data-lucide="download" class="w-4 h-4"></i> DOWNLOAD PDF
-                    </button>
                 </div>
-                <!-- Booklet Item -->
-                <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 card-hover text-center">
-                    <div class="aspect-[3/4] bg-slate-100 rounded-lg mb-4 flex items-center justify-center text-green-400">
-                        <i data-lucide="award" class="w-16 h-16 opacity-20"></i>
+
+                <!-- Карточка 3 -->
+                <div class="rule-gallery cursor-pointer"
+                    data-images='["Public/des/0001.png","Public/des/0002.png"]'>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 card-hover text-center">
+                        <div class="aspect-[3/4] bg-slate-100 rounded-lg mb-4 overflow-hidden">
+                            <img src="Public/des/0001.png"
+                                class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">DESIGN</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Click to open gallery
+                        </p>
+                        <div class="w-full py-2 bg-green-50 text-green-600 rounded-lg font-semibold flex items-center justify-center gap-2">
+                            <i data-lucide="images" class="w-4 h-4"></i> OPEN
+                        </div>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">HISTORY OF LOREM</h3>
-                    <p class="text-sm text-slate-500 mb-4">About the concept, values and future of our project.</p>
-                    <button class="w-full py-2 bg-green-50 text-green-600 rounded-lg font-semibold hover:bg-green-100 transition flex items-center justify-center gap-2">
-                        <i data-lucide="download" class="w-4 h-4"></i> DOWNLOAD PDF
-                    </button>
                 </div>
+
             </div>
         </div>
     </section>
+
 
     <!-- 3. Правила (Карточки) -->
     <section id="rules" class="py-20 bg-green-900 text-white">
@@ -152,7 +198,7 @@
                         <i data-lucide="eye" class="w-8 h-8"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3 italic">CLARITAS</h3>
-                    <p class="text-green-100 text-sm">We are open to dialogue and provide full information about processes inside LOREM.</p>
+                    <p class="text-green-100 text-sm">We are open to dialogue and provide full information about processes inside Тастар.</p>
                 </div>
             </div>
         </div>
@@ -161,13 +207,13 @@
     <!-- 4. Будущий дизайн (Пресс-релизы) -->
     <section id="design" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-4 heading-font text-slate-900">FUTURE DESIGN</h2>
+            <h2 class="text-3xl font-bold mb-4 heading-font text-slate-900">Болашақ дизайн</h2>
             <p class="text-slate-500 mb-12">Exclusive look at upcoming announcements and concepts</p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div class="text-left space-y-6">
                     <div class="inline-flex items-center px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase tracking-wider gap-2">
-                        <i data-lucide="sparkles" class="w-3 h-3"></i> COMING 2025
+                        <i data-lucide="sparkles" class="w-3 h-3"></i> COMING 2026
                     </div>
                     <h3 class="text-4xl font-bold leading-tight">MINIMALISM IN NEW FORM</h3>
                     <p class="text-slate-600">Our designers are working on a secret release that will change the idea of everyday things. We combine digital minimalism and physical reliability.</p>
@@ -197,7 +243,7 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 border-b border-slate-800 pb-12">
                 <div>
-                    <h4 class="text-white text-xl font-bold heading-font mb-6">LOREM</h4>
+                    <h4 class="text-white text-xl font-bold heading-font mb-6">Тастар</h4>
                     <p class="text-sm leading-relaxed">Project of the future, respecting the past. We create things that matter.</p>
                 </div>
                 <div>
@@ -213,7 +259,7 @@
                         </li>
                         <li class="flex items-center gap-3">
                             <i data-lucide="mail" class="w-5 h-5 text-green-400 shrink-0"></i>
-                            <span>info@lorem-project.kz</span>
+                            <span>info@Тастар-project.kz</span>
                         </li>
                     </ul>
                 </div>
@@ -233,7 +279,7 @@
                 </div>
             </div>
             <div class="flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
-                <p>&copy; 2024 LOREM. All rights reserved.</p>
+                <p>&copy; 2024 Тастар. All rights reserved.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="#" class="hover:text-white transition">Privacy & Confidentiality</a>
                     <a href="#" class="hover:text-white transition">Public Offering</a>
@@ -242,8 +288,84 @@
         </div>
     </footer>
 
+    <!-- МОДАЛЬНАЯ КАРУСЕЛЬ -->
+    <div id="galleryModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 p-4">
+
+        <div class="relative flex items-center justify-center w-full max-w-5xl">
+
+            <!-- Кнопка закрытия -->
+            <button id="closeModal"
+                class="absolute -top-12 right-4 text-white text-4xl hover:scale-110 transition z-50">
+                ✕
+            </button>
+
+            <!-- Левая стрелка -->
+            <button id="prevBtn"
+                class="absolute -left-16 text-white text-5xl hover:scale-110 transition select-none">
+                ❮
+            </button>
+
+            <!-- Картинка -->
+            <img id="modalImage"
+                class="max-h-[80vh] w-auto max-w-full rounded-2xl shadow-2xl object-contain">
+
+            <!-- Правая стрелка -->
+            <button id="nextBtn"
+                class="absolute -right-16 text-white text-5xl hover:scale-110 transition select-none">
+                ❯
+            </button>
+
+        </div>
+    </div>
+
+
     <script>
-        // Инициализация иконок Lucide
+    let currentImages = [];
+    let currentIndex = 0;
+
+    const modal = document.getElementById("galleryModal");
+    const modalImg = document.getElementById("modalImage");
+
+    document.querySelectorAll(".rule-gallery").forEach(item => {
+        item.addEventListener("click", () => {
+            currentImages = JSON.parse(item.dataset.images);
+            currentIndex = 0;
+            modalImg.src = currentImages[currentIndex];
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+            document.body.style.overflow = "hidden";
+        });
+    });
+
+    document.getElementById("closeModal").onclick = () => {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        document.body.style.overflow = "auto";
+    };
+
+    document.getElementById("prevBtn").onclick = () => {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        modalImg.src = currentImages[currentIndex];
+    };
+
+    document.getElementById("nextBtn").onclick = () => {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        modalImg.src = currentImages[currentIndex];
+    };
+
+    // Закрытие по клику вне картинки
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+            document.body.style.overflow = "auto";
+        }
+    });
+    </script>
+
+
+
+    <script>
         lucide.createIcons();
     </script>
 </body>
